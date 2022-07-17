@@ -42,7 +42,7 @@ class CreateFileSiteMap
         if (!file_exists($dir)){
             if ($rights[1] >= 6) {
                 mkdir($dir);
-            }else throw new \Exception("Ошибка записи файла:недостаточно прав на создание папки");
+            }else throw new \Exception("Ошибка записи файла: недостаточно прав на создание папки");
         }
     }
 }

@@ -1,13 +1,14 @@
 {
-  "name": "khimich/sitemap",
+  "name": "kirillkhimich/sitemap",
   "description": "create sitemaps",
   "license": "MIT",
   "require": {
-    "php": ">=7.0"
+    "php": ">=7.0",
+    "version/version": "dev-master"
   },
   "autoload": {
     "psr-4": {
-      "SiteMapClasses\\" : "SiteMapClasses"
+      "SiteMapClasses\\" : "sitemap\\SiteMapClasses"
     }
   }
 }
