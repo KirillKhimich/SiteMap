@@ -11,6 +11,7 @@ class CreateFileSiteMap
     }
 
     public function CreateFile($type){
+
         try {
             $this->CreateDir($this->dir);
         }catch (\Exception $e){
@@ -26,14 +27,14 @@ class CreateFileSiteMap
                 $typeFile = ".json";
             }else{
                 throw new \Exception("Ошибка записи файла:проверьте переданный параметр типа");
-                return false;
             }
-                if (!file_exists( $this->dir ."/". "sitemap" . $typeFile)) {
-                    $stream = fopen($this->dir ."/". "sitemap". $typeFile, "w");
+            $file = $this->dir ."/". "sitemap". $typeFile;
+                if (!file_exists($file)){
+                    $stream = fopen($file, "w");
                     fclose($stream);
                 }
+            return $file;
         }else throw new \Exception("Ошибка записи файла:недостаточно прав на создание файла");
-
     }
 
     private function CreateDir($dir){
