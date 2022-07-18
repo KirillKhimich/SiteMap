@@ -3,12 +3,11 @@
   "description": "create sitemaps",
   "license": "MIT",
   "require": {
-    "php": ">=7.0",
-    "version/version": "dev-master"
+    "php": ">=7.0"
   },
   "autoload": {
     "psr-4": {
-      "SiteMapClasses\\" : "sitemap\\SiteMapClasses"
+      "SiteMapClasses\\" : "SiteMapClasses"
     }
   }
 }

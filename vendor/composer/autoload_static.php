@@ -16,7 +16,7 @@ class ComposerStaticInit3cd44a06021c57a61d5e11bf9d2fe5d4
     public static $prefixDirsPsr4 = array (
         'SiteMapClasses\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/SiteMapClasses',
+            0 => __DIR__ . '/../..' . '/sitemap/SiteMapClasses',
         ),
     );
 
