@@ -1,8 +1,8 @@
 <?php
 
-namespace SiteMapClasses;
+namespace Sourses;
 
-use SiteMapClasses\CreateFileSiteMap;
+use Sourses\CreateFileSiteMap;
 class CreateSiteMap
 {
     private $createFile;

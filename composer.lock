@@ -4,70 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3e4016435f438e3013c4cbbe571cdcb2",
-    "packages": [
-        {
-            "name": "version/version",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mod/version.git",
-                "reference": "5a3f17a41b449e25d9f83a4503d02e977ca9ebb1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-mod/version/zipball/5a3f17a41b449e25d9f83a4503d02e977ca9ebb1",
-                "reference": "5a3f17a41b449e25d9f83a4503d02e977ca9ebb1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "fabpot/php-cs-fixer": "~1.7",
-                "phpunit/phpunit": "~4.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Version": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Hassan Amouhzi",
-                    "email": "hassan@amouhzi.com",
-                    "homepage": "http://anezi.net"
-                }
-            ],
-            "description": "A library for creating, editing, and comparing semantic versioning numbers.",
-            "homepage": "http://github.com/php-mod/version",
-            "keywords": [
-                "semantic",
-                "version"
-            ],
-            "support": {
-                "issues": "https://github.com/php-mod/version/issues",
-                "source": "https://github.com/php-mod/version/tree/master"
-            },
-            "time": "2015-06-07T16:18:01+00:00"
-        }
-    ],
+    "content-hash": "d751713988987e9331980363e24189ce",
+    "packages": [],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "version/version": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "php": ">=7.0"
-    },
+    "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }

@@ -1,13 +1,18 @@
 {
-  "name": "kirillkhimich/sitemap",
-  "description": "create sitemaps",
-  "license": "MIT",
-  "require": {
-    "php": ">=7.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "SiteMapClasses\\" : "SiteMapClasses"
+    "name": "kirillkhimich/sitemap",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kirillkhimich\\Sitemap\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kirill Khimich"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
     }
-  }
 }

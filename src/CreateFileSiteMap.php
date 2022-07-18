@@ -1,7 +1,6 @@
 <?php
 
-namespace SiteMapClasses;
-
+namespace Sourses;
 
 class CreateFileSiteMap
 {
