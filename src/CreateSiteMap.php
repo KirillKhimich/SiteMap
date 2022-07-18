@@ -1,8 +1,8 @@
 <?php
 
-namespace Sourses;
+namespace Kirillkhimich\Sitemap;
 
-use Sourses\CreateFileSiteMap;
+use Kirillkhimich\Sitemap\CreateFileSiteMap;
 class CreateSiteMap
 {
     private $createFile;

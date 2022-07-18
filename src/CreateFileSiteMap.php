@@ -1,6 +1,6 @@
 <?php
 
-namespace Sourses;
+namespace Kirillkhimich\Sitemap;
 
 class CreateFileSiteMap
 {
