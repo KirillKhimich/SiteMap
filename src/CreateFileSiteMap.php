@@ -6,13 +6,13 @@ class CreateFileSiteMap
 {
     private $dir;
     public function __construct(){
-        $this ->dir = $_SERVER['DOCUMENT_ROOT'] . "/SiteMapFiles";
+        $this ->dir = $_SERVER['DOCUMENT_ROOT'];
     }
 
-    public function CreateFile($type){
+    public function CreateFile($type,$path = ""){
 
         try {
-            $this->CreateDir($this->dir);
+            $this->CreateDir($this->dir,$path);
         }catch (\Exception $e){
             die($e->getMessage());
         }
@@ -36,11 +36,17 @@ class CreateFileSiteMap
         }else throw new \Exception("Ошибка записи файла:недостаточно прав на создание файла");
     }
 
-    private function CreateDir($dir){
+    private function CreateDir($dir,$path = ""){
         $rights = substr(sprintf('%o', fileperms($_SERVER['DOCUMENT_ROOT'])), -4);
         if (!file_exists($dir)){
             if ($rights[1] >= 6) {
-                mkdir($dir);
+                if (empty($path)){
+                    $dir = $this->dir . "/sitemaps";
+                    mkdir($dir);
+                }else{
+                    $dir = $this->dir . "/$path";
+                    mkdir($dir);
+                }
             }else throw new \Exception("Ошибка записи файла: недостаточно прав на создание папки");
         }
     }

@@ -11,7 +11,7 @@ class CreateSiteMap
         $this->createFile = new CreateFileSiteMap();
     }
 
-    public function CreateSiteMap($array,$type){
+    public function CreateSiteMap($array,$type,$path = ""){
 
         try {
             $this->CheckArray($array);
@@ -19,7 +19,7 @@ class CreateSiteMap
             die($e->getMessage());
         }
         try {
-            $file = $this->createFile->CreateFile($type);
+            $file = $this->createFile->CreateFile($type,$path);
         }catch (\Exception $e){
             die($e->getMessage());
         }
